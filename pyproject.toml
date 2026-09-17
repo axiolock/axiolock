@@ -5,12 +5,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "axiolock"
 version = "0.1.0"
-description = "A Python library for algebraic compilation based on axioms."
+description = "A Python library for algorithmic compilation based on axioms and locked structures."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
 authors = [{ name = "Axiolock" }]
 dependencies = [
+    "numpy>=1.25",
     "python-flint",
 ]
 classifiers = [

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "axiolock"
+abstract: "A Python library for algorithmic compilation based on axioms and locked structures."
+authors:
+  - name: "FLBPeriat"
+version: "0.1.0"
+date-released: 2026-09-17
+license: MIT
+repository-code: "https://github.com/axiolock/axiolock"
+url: "https://github.com/axiolock/axiolock"
+keywords:
+  - Python
+  - algebra
+  - compilation
