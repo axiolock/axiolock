@@ -3,13 +3,13 @@
 
 <img src="media/gear_icon.png" height="40px" />
 
-# Axiolock
+# Axio**lock**
 
  ![GitHub language count](https://img.shields.io/github/languages/count/axiolock/axiolock?style=flat-square&logo=python&logoColor=%234380FA&color=%234380FA&link=https%3A%2F%2Fdocs.python.org%2F3%2F)
  ![GitHub License](https://img.shields.io/github/license/axiolock/axiolock?style=flat-square&logoColor=%234380FA&color=%234380FA&link=https%3A%2F%2Fgithub.com%2Faxiolock%2Faxiolock%2Fblob%2Fmain%2FLICENSE)
  ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/axiolock/axiolock?style=flat-square&link=https%3A%2F%2Fgithub.com%2Faxiolock%2Faxiolock%2Fcommits%2Fmain)
  
-A Python library for algorithmic compilation based on axioms and locked structures.
+*A Python library for algorithmic compilation based on axioms and locked structures.*
 
 </div>
     
