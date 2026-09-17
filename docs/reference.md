@@ -1,22 +1,22 @@
-# Référence
+# Reference
 
-Cette page recense les points d'entrée publics actuellement documentés.
+This page lists the currently documented public entry points.
 
 ## Package
 
-Le package principal est [`axiolock`](https://github.com/axiolock/axiolock/tree/main/axiolock).
+The main package is [`axiolock`](https://github.com/axiolock/axiolock/tree/main/axiolock).
 
-## Fonction et compilation
+## Function and compilation
 
-La classe `Function` représente actuellement une fonction décrite par un nom et du code source. La méthode `optimize()` constitue le point d'entrée prévu pour produire une version optimisée.
+The `Function` class currently represents a function described by a name and source code. The `optimize()` method is the intended entry point for producing an optimized version.
 
-!!! warning "API expérimentale"
+!!! warning "Experimental API"
 
-    Cette surface est en cours de construction. Consultez le code source et les notes de version avant de l'intégrer à une application de production.
+    This surface is under construction. Review the source code and release notes before integrating it into a production application.
 
-## Arborescence
+## Package layout
 
-- `axiolock/function.py` : représentation d'une fonction et de sa variante optimisée.
-- `axiolock/algorithm/` : algorithmes et domaines de compilation.
-- `axiolock/_compile/` : mécanismes internes de compilation et de persistance.
-- `axiolock/exception/` : exceptions du package.
+- `axiolock/function.py`: representation of a function and its optimized variant.
+- `axiolock/algorithm/`: compilation algorithms and domains.
+- `axiolock/_compile/`: internal compilation and persistence mechanisms.
+- `axiolock/exception/`: package exceptions.

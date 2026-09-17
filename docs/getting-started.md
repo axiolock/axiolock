@@ -1,19 +1,19 @@
-# Démarrage
+# Getting started
 
-## Prérequis
+## Prerequisites
 
-- Python 3.11 ou une version plus récente
+- Python 3.11 or newer
 - `pip`
 
 ## Installation
 
-Depuis PyPI :
+From PyPI:
 
 ```bash
 python -m pip install axiolock
 ```
 
-Pour travailler depuis le dépôt :
+For local development:
 
 ```bash
 git clone https://github.com/axiolock/axiolock.git
@@ -21,15 +21,15 @@ cd axiolock
 python -m pip install -e ".[dev]"
 ```
 
-## Premier contrôle
+## First check
 
-Vérifiez que le package est importable :
+Check that the package can be imported:
 
 ```bash
 python -c "import axiolock; print(axiolock.__name__)"
 ```
 
-Les vérifications du projet sont :
+Run the project checks with:
 
 ```bash
 python -m pytest
@@ -37,13 +37,13 @@ python -m ruff check .
 python -m build
 ```
 
-## Développement de la documentation
+## Documentation development
 
-Installez l'extra de documentation puis lancez le serveur local :
+Install the documentation extra and start the local server:
 
 ```bash
 python -m pip install -e ".[docs]"
 python -m mkdocs serve
 ```
 
-Le site sera disponible à l'adresse `http://127.0.0.1:8000/`.
+The site will be available at `http://127.0.0.1:8000/`.

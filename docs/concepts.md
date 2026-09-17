@@ -1,23 +1,23 @@
 # Concepts
 
-## Axiomes
+## Axioms
 
-Un axiome décrit une propriété attendue d'une entrée ou d'un résultat. Il peut par exemple exprimer une contrainte de forme, de type ou de domaine numérique.
+An axiom describes an expected property of an input or result. It can express a shape, type, or numeric-domain constraint, for example.
 
-Les axiomes servent de conditions de sélection : une optimisation ne doit être utilisée que lorsque les propriétés nécessaires sont satisfaites.
+Axioms act as selection conditions: an optimization should only be used when the required properties hold.
 
 ## Compilation
 
-La compilation transforme la représentation d'une fonction en une variante spécialisée. L'objectif est de déplacer autant que possible le travail coûteux avant l'appel réel, tout en gardant une sémantique équivalente pour les entrées admissibles.
+Compilation transforms a function representation into a specialized variant. The goal is to move as much expensive work as possible before the actual call while preserving equivalent semantics for admissible inputs.
 
-## Repli sûr
+## Safe fallback
 
-Lorsque les axiomes ne sont pas satisfaits, l'implémentation originale reste le chemin de repli. Ce modèle permet d'expérimenter des spécialisations sans imposer leurs hypothèses à tous les appelants.
+When the axioms do not hold, the original implementation remains the fallback path. This model makes it possible to experiment with specializations without imposing their assumptions on every caller.
 
-## Cache
+## Caching
 
-La préparation d'une fonction peut être plus coûteuse que son exécution. Axiolock prévoit donc un mécanisme de persistance afin de réutiliser les fonctions déjà compilées entre plusieurs exécutions.
+Preparing a function can cost more than executing it. Axiolock therefore provides persistence so compiled functions can be reused across executions.
 
 !!! note
 
-    Ces concepts décrivent la direction actuelle du projet. Les détails de l'API seront précisés à mesure que l'implémentation évoluera.
+    These concepts describe the current direction of the project. API details will be refined as the implementation evolves.

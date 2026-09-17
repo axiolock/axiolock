@@ -1,50 +1,51 @@
 # Axiolock
 
-**Compilation algorithmique à partir d'axiomes et de structures verrouillées.**
+**Algorithmic compilation based on axioms and locked structures.**
 
-Axiolock explore une approche où des propriétés connues sur les entrées et les sorties d'une fonction permettent de sélectionner une implémentation plus efficace, tout en conservant un repli vers le comportement original lorsque les conditions ne sont pas réunies.
+Axiolock explores an approach where known properties of a function's inputs and outputs make it possible to select a more efficient implementation, while preserving a fallback to the original behavior when the conditions are not met.
 
 <div class="grid cards" markdown>
 
--   :material-download: **Installer**
+-   :material-download: **Install**
 
     ---
 
-    Installez la dernière version publiée avec `pip`.
+    Install the latest release with `pip`.
 
-    [:octicons-arrow-right-24: Installation](getting-started.md)
+    [:octicons-arrow-right-24: Getting started](getting-started.md)
 
--   :material-lightbulb-on-outline: **Comprendre**
+-   :material-lightbulb-on-outline: **Understand**
 
     ---
 
-    Découvrez le rôle des axiomes, de la compilation et du cache.
+    Learn about axioms, compilation, and caching.
 
     [:octicons-arrow-right-24: Concepts](concepts.md)
 
--   :material-github: **Contribuer**
-
+-   :material-book-open-page-variant-outline: **Reference**
+    
     ---
 
-    Le projet est ouvert aux retours, exemples et implémentations.
+    Browse the API documentation and public entry points.
 
-    [:octicons-arrow-right-24: GitHub](https://github.com/axiolock/axiolock)
+    [:octicons-arrow-right-24: Référence](reference.md)
+
 
 </div>
 
-!!! warning "Projet en développement"
+!!! warning "Work in progress"
 
-    Axiolock est encore en phase alpha. L'API peut évoluer avant la première version stable.
+    Axiolock is still in alpha. The API may change before the first stable release.
 
-## Vue d'ensemble
+## Overview
 
-Le flux visé est le suivant :
+The intended workflow is:
 
-1. Décrire une fonction et ses contraintes.
-2. Déclarer les axiomes applicables à ses arguments ou à son résultat.
-3. Compiler une variante optimisée pour les cas où ces axiomes sont satisfaits.
-4. Utiliser la version originale comme solution de repli dans les autres cas.
+1. Describe a function and its constraints.
+2. Declare the axioms that apply to its arguments or result.
+3. Compile an optimized variant for cases where those axioms hold.
+4. Use the original implementation as a fallback otherwise.
 
-## Licence et citation
+## License and citation
 
-Axiolock est distribué sous licence MIT. Les informations de citation sont disponibles dans [`CITATION.cff`](https://github.com/axiolock/axiolock/blob/main/CITATION.cff).
+Axiolock is distributed under the MIT license. Citation information is available in [`CITATION.cff`](https://github.com/axiolock/axiolock/blob/main/CITATION.cff).
