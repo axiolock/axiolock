@@ -1,0 +1,54 @@
+site_name: Axiolock
+site_description: Documentation de la bibliothèque Python Axiolock.
+site_url: https://axiolock.github.io/axiolock/
+repo_url: https://github.com/axiolock/axiolock
+repo_name: axiolock/axiolock
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: fr
+  favicon: https://raw.githubusercontent.com/axiolock/axiolock/main/media/gear_icon.png
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Passer au thème sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Passer au thème clair
+
+nav:
+  - Accueil: index.md
+  - Démarrage: getting-started.md
+  - Concepts: concepts.md
+  - Référence: reference.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/axiolock/axiolock
+
+copyright: Copyright &copy; 2026 Axiolock

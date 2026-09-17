@@ -27,6 +27,10 @@ Axiolock is a Python library that enables the creation of more efficient functio
 
 Due to the fact that the preprocessing of the functions generally requires a lot of time, the library provides a caching mechanism that allows the user to store the compiled functions for later use. This way, the user can avoid recompiling the same function multiple times.
 
+## Documentation
+
+Read the documentation on [GitHub Pages](https://axiolock.github.io/axiolock/).
+
 
 ### Citing the project
 

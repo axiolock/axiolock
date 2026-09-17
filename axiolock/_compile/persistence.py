@@ -69,14 +69,14 @@ class IntegrityCheckable(Picklable, metaclass=abc.ABCMeta):
         """
         Initialize the integrity checkable object.
         """
-        self.__cache_hash: int | None = None
+        self.__is_valid: bool = True
     
     @abc.abstractmethod
     def __hash__(self) -> int:
         """
         Return a hash value for the serialized object.
         """
-        return 0
+        ...
         
     @abc.abstractmethod
     def __eq__(self, other: Any) -> bool:
@@ -86,8 +86,44 @@ class IntegrityCheckable(Picklable, metaclass=abc.ABCMeta):
         ...
     
     @abc.abstractmethod
+    def __getstate(self, copy: bool = False) -> State:
+        """
+        Return the state of the object for pickling.
+        
+        Parameters:
+            copy (bool): If True, return a copy of the state. Default is False.
+            
+        Returns:
+            State: The state of the object as a dictionary.
+        """
+        ...
+        
     def __getstate__(self) -> State:
         """
         Return the state of the object for pickling.
         """
-        return self.__getstate__() | {"__cache_hash": hash(self)}
+        state = self.__getstate(copy=True)
+        state["__is_valid"] = self.__is_valid
+        if self.__is_valid:
+            state["__cache_hash"] = hash(self)
+        return state
+    
+    @abc.abstractmethod
+    def __setstate(self, state: State) -> None:
+        """
+        Restore the state of the object from pickling.
+        """
+        ...
+
+    def __setstate__(self, state: State) -> None:
+        """
+        Restore the state of the object from pickling.
+        """
+        if "__is_valid" in state:
+            self.__is_valid = state.pop("__is_valid") is True
+            if self.__is_valid and "__cache_hash" in state:
+                cache_hash = state.pop("__cache_hash")
+                if isinstance(cache_hash, int):
+                    self.__is_valid = cache_hash == hash(self)
+                    return
+        self.__is_valid = False

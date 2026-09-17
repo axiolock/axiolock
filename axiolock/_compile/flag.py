@@ -1,4 +1,4 @@
-from abstract import Picklable
+from axiolock._compile.persistence import Picklable
 
 
 class Flag(Picklable):
