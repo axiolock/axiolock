@@ -3,7 +3,8 @@
 
 <img src="media/gear_icon.png" height="40px" />
 
-# Axio**lock**
+<code>Axio<b>lock</b></code>
+
 
  ![GitHub language count](https://img.shields.io/github/languages/count/axiolock/axiolock?style=flat-square&logo=python&logoColor=%234380FA&color=%234380FA&link=https%3A%2F%2Fdocs.python.org%2F3%2F)
  ![GitHub License](https://img.shields.io/github/license/axiolock/axiolock?style=flat-square&logoColor=%234380FA&color=%234380FA&link=https%3A%2F%2Fgithub.com%2Faxiolock%2Faxiolock%2Fblob%2Fmain%2FLICENSE)
