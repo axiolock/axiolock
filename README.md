@@ -1,16 +1,26 @@
-## Hi there 👋
+# Axiolock
 
-<!--
-**axiolock/axiolock** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A Python library for algebraic compilation based on axioms
 
-Here are some ideas to get you started:
+Requires Python 3.11 or newer.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Installation
+
+```bash
+python -m pip install axiolock
+```
+
+To install the development dependencies, run:
+
+```bash
+python -m pip install -e ".[dev]"
+```
+
+## Verification
+
+```bash
+python -m pytest
+python -m ruff check .
+python -m build
+```
+
