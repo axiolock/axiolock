@@ -1,4 +1,4 @@
-# Axiolock
+# Home
 
 **Algorithmic compilation based on axioms and locked structures.**
 
@@ -29,6 +29,14 @@ Axiolock explores an approach where known properties of a function's inputs and 
     Browse the API documentation and public entry points.
 
     [:octicons-arrow-right-24: Référence](reference.md)
+
+-   :material-rocket-launch-outline: **Quick start**
+
+    ---
+
+    Build your first optimized function with Axiolock.
+
+    [:octicons-arrow-right-24: Quick start](getting-started.md)
 
 
 </div>
