@@ -20,6 +20,7 @@
   --axio-font-family: "Raleway", Consolas, monospace;
   --axio-text-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --axio-code-font-family: "JetBrains Mono", "Cascadia Code", Consolas, monospace;
+  --axio-logo-image: url("https://raw.githubusercontent.com/axiolock/axiolock/main/media/gear_icon.png");
   --axio-brand-axio-weight: 300;
   --axio-brand-lock-weight: 800;
   --axio-brand-spacing: 0.01em;
@@ -82,6 +83,17 @@ body {
   letter-spacing: var(--axio-brand-spacing);
 }
 
+.md-logo {
+  background-image: var(--axio-logo-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.md-logo svg {
+  visibility: hidden;
+}
+
 .md-header__topic .md-ellipsis {
   font-size: 0;
 }
@@ -123,7 +135,7 @@ body {
   border: var(--axio-border-width) solid var(--axio-border);
   border-radius: var(--axio-navigation-radius);
   box-shadow: var(--axio-navigation-shadow);
-  height: auto;
+  height: fit-content;
   margin: 0;
   max-height: none;
   overflow: visible;
@@ -131,6 +143,10 @@ body {
 }
 
 .md-sidebar--secondary {
+  height: auto;
+}
+
+.md-sidebar--primary {
   height: auto;
 }
 
