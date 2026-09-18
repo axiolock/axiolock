@@ -1,6 +1,6 @@
 site_name: Axiolock
 site_description: Documentation for the Axiolock Python library.
-site_url: https://axiolock.github.io
+site_url: https://axiolock.github.io/axiolock/
 repo_url: https://github.com/axiolock/axiolock
 repo_name: axiolock/axiolock
 edit_uri: edit/main/docs/
