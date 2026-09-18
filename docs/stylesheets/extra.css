@@ -23,8 +23,8 @@
   --axio-logo-image: url("https://raw.githubusercontent.com/axiolock/axiolock/main/media/gear_icon.png");
   --axio-brand-axio-weight: 300;
   --axio-brand-lock-weight: 800;
-  --axio-brand-spacing: 0.01em;
-  --axio-brand-join-offset: 0.0em;
+  --axio-brand-spacing: 2px;
+  --axio-brand-join-offset: -1em;
   --axio-brand-font-size: 0.9rem;
   --axio-nav-indent: 0.6rem;
   --axio-navigation-padding: 0.6rem;
@@ -38,7 +38,7 @@
   --axio-radius-inline-code: 3px;
   --axio-radius-code-block: 4px;
   --axio-navigation-radius: 4px;
-  --axio-copyright-size: 0.64rem;
+  --axio-copyright-size: 0.6rem;
   --axio-hidden-size: 0;
   --axio-hidden-display: none;
   --axio-full-opacity: 1;
@@ -85,32 +85,32 @@ body {
 
 .md-logo {
   background-image: var(--axio-logo-image);
+  background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .md-logo svg {
   visibility: hidden;
 }
 
-.md-header__topic .md-ellipsis {
+.md-header__topic:first-child .md-ellipsis {
   font-size: 0;
 }
 
-.md-header__topic .md-ellipsis::before,
-.md-header__topic .md-ellipsis::after {
+.md-header__topic:first-child .md-ellipsis::before,
+.md-header__topic:first-child .md-ellipsis::after {
   font-family: var(--axio-font-family);
   font-size: var(--axio-brand-font-size);
   letter-spacing: var(--axio-brand-spacing);
 }
 
-.md-header__topic .md-ellipsis::before {
+.md-header__topic:first-child .md-ellipsis::before {
   content: "Axio";
   font-weight: var(--axio-brand-axio-weight);
 }
 
-.md-header__topic .md-ellipsis::after {
+.md-header__topic:first-child .md-ellipsis::after {
   content: "lock";
   font-weight: var(--axio-brand-lock-weight);
   margin-left: var(--axio-brand-join-offset);
@@ -136,18 +136,18 @@ body {
   border-radius: var(--axio-navigation-radius);
   box-shadow: var(--axio-navigation-shadow);
   height: fit-content;
-  margin: 0;
-  max-height: none;
-  overflow: visible;
+  margin: 10px;
+  max-height: 100%;
+  overflow-y: auto;
   padding: var(--axio-navigation-padding);
 }
 
 .md-sidebar--secondary {
-  height: auto;
+  height: fit-content;
 }
 
 .md-sidebar--primary {
-  height: auto;
+  height: fit-content;
 }
 
 .md-tabs__link {
