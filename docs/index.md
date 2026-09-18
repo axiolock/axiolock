@@ -6,7 +6,7 @@ Axiolock explores an approach where known properties of a function's inputs and 
 
 <div class="grid cards" markdown>
 
--   :material-download: **Install**
+-   [:material-download: Installation] **Install**
 
     ---
 
